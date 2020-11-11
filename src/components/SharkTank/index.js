@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
 class SharkTank extends Component {
-  state = {
-
-  }
-
   render() {
     return (
-      <h1>Shark Tank</h1>
+      <div className='tank'>
+        <h2>Shark Tank</h2>
+      </div>
     );
   }
 }
