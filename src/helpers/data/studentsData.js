@@ -121,4 +121,14 @@ const students = [
   },
 ];
 
-console.warn(students);
+const livingStudents = () => {
+  const living = students.filter((student) => student.isDead === false);
+  return living;
+};
+
+const dearlyBeloved = () => {
+  const dead = students.filter((student) => student.isDead === true);
+  return dead;
+};
+
+export default { livingStudents, dearlyBeloved };
