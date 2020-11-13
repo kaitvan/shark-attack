@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
+import { Card } from 'react-bootstrap';
 
 class GraveStone extends Component {
-  state = {
-
-  }
-
   render() {
+    const { student } = this.props;
     return (
-      <h1>GraveStone</h1>
+        <Card body>{student.firstName} {student.lastName}</Card>
     );
   }
 }
