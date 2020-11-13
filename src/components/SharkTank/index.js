@@ -1,26 +1,10 @@
 import React, { Component } from 'react';
-import studentsData from '../../helpers/data/studentsData';
 import LiveStudent from '../LiveStudent';
 
 class SharkTank extends Component {
-  state = {
-    students: [],
-  }
-
-  componentDidMount() {
-    this.loadData();
-  }
-
-  loadData = () => {
-    this.setState({
-      students: studentsData.livingStudents(),
-    });
-  }
-
   render() {
-    const { students } = this.state;
     const renderStudentToDom = () => (
-      students.map((student) => <LiveStudent key={student.id} student={student} />)
+      this.props.livingStudents.map((student) => <LiveStudent key={student.id} student={student} />)
     );
 
     return (
