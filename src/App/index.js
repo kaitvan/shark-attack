@@ -6,7 +6,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>SHARK ATTACK</h1>
-          <SharkTank />
+        <SharkTank />
+        <button className="attack btn btn-danger" onClick={console.warn('attack clicked')}>Shark Attack</button>
       </div>
     );
   }
