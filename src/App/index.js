@@ -27,7 +27,7 @@ class App extends React.Component {
         <h1>SHARK ATTACK</h1>
         <SharkTank livingStudents={livingStudents} />
         <button className="attack btn btn-danger" onClick={this.attackStudent}>Shark Attack</button>
-        <Graveyard deadStudents={deadStudents}/>
+        <Graveyard deadStudents={deadStudents} />
       </div>
     );
   }
